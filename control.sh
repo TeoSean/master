@@ -26,7 +26,7 @@ nikto -h $IP | tee nikto.txt
 subl nikto.txt
 if [ $gobuster = True]
 then
-	
+	gobuster dir -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt > gobuster.txt
 fi
 elif [ $metasploit = True ]
 then 
