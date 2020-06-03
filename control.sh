@@ -1,6 +1,8 @@
 export gobuster=False
 export metasploit=False
 
+sudo apt-get install nikto nmap gobuster metasploit-framework 
+
 export IP=$4
 if [ $1 = -g ]
 then
